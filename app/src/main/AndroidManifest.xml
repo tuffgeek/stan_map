@@ -1,0 +1,102 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digitalbabies.traafik">
+
+
+    <permission
+        android:name="com.digitalbabies.traafik"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.digitalbabies.traafik.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme"
+        android:name=".Main"
+        >
+
+
+        <activity
+            android:name="com.digitalbabies.traafik.Splash"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.digitalbabies.traafik.Login"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.digitalbabies.traafik.Signup"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            >
+        </activity>
+        <activity
+            android:name="com.digitalbabies.traafik.Home"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            >
+        </activity>
+
+        <activity
+            android:name="com.digitalbabies.traafik.Profile"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            >
+        </activity>
+        <activity
+            android:name=".Setting"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            >
+        </activity>
+
+
+
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/facebook_app_name" />
+        <provider android:authorities="com.facebook.app.FacebookContentProvider920981391292650"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <receiver android:name="com.digitalbabies.traafik.FacebookBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDsq6zL7WZYjaZ787iuGiJV9Cv2YN5yCTE"
+            />
+
+
+    </application>
+
+</manifest>

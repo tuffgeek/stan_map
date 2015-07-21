@@ -1,0 +1,117 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:background="@drawable/bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_signup" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/header">
+
+
+    <RelativeLayout
+        android:id="@+id/main_rltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_pic"
+            android:background="@drawable/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:layout_below="@+id/profile_pic"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_below="@+id/username"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_below="@+id/Email"/>
+
+
+
+    <EditText
+        android:id="@+id/MobileNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Mobile"
+        android:singleLine="true"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_below="@+id/Password"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_signup"
+        android:layout_below="@+id/MobileNo"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+       />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_signup"
+            android:layout_below="@+id/MobileNo"
+            android:layout_marginTop="20dp"
+           />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

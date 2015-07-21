@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+
+<RelativeLayout
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:id="@+id/scrollr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main_rltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+         >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:background="@drawable/logo_traffik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:id="@+id/Email_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Full Name / Email / Mobile"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:layout_below="@+id/logo"
+       />
+
+   <EditText
+        android:id="@+id/Passwrd_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+       android:inputType="textPassword"
+        android:layout_below="@+id/Email_login"/>
+
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Passwrd_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_signin"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Login"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_signup"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:singleLine="true"
+        android:text="or"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:layout_below="@+id/main_rltv"/>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/or"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/main_ui_container">
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            facebook:com_facebook_confirm_logout="false"
+            facebook:com_facebook_tooltip_mode="never_display"
+            />
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="#333"
+                android:textSize="18sp"/>
+            <com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/profilePicture"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                facebook:com_facebook_preset_size="normal"/>
+            <Button
+                android:id="@+id/postStatusUpdateButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                android:text="Post Status Update"
+                />
+            <Button
+                android:id="@+id/postPhotoButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Post Photo"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ui_container"
+        android:visibility="gone"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

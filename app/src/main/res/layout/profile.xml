@@ -1,0 +1,129 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_profile" >
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/header"
+
+        >
+
+
+    <RelativeLayout
+        android:id="@+id/main_rltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/header"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_pic"
+            android:background="@drawable/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+
+
+            />
+        
+        <TextView
+            android:id="@+id/name_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akin Ambode"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="32dp"
+            android:textColor="#EE5A2F"
+
+            android:layout_below="@+id/profile_pic"/>
+
+        <TextView
+            android:id="@+id/addres_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lagos Nigeria"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#EE5A2F"
+            android:layout_below="@+id/name_p"/>
+
+        <EditText
+            android:id="@+id/etfirstname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Firstname"
+            android:layout_below="@+id/addres_p"
+            android:padding="10dp"
+            android:singleLine="true"
+           />
+
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Lastname"
+            android:layout_below="@+id/etfirstname"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etuserrname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Username"
+            android:layout_below="@+id/etlastname"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etPaswrd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:layout_below="@+id/etuserrname"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save"
+            android:layout_below="@+id/etPaswrd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+

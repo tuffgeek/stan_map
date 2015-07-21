@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header_mapchat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapchat" >
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/header_mapchat">
+
+        <RelativeLayout
+            android:id="@+id/scrollr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        <RelativeLayout
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_white_lg"
+           android:layout_marginTop="50dp"
+            >
+            
+            <TextView
+                android:id="@+id/details_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Details Here"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/details_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Sleeveless"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/details_text"
+                android:layout_marginLeft="6dp"
+                />
+
+            <TextView
+                android:id="@+id/details_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Low cut back with stay put elastic trim"
+                android:layout_below="@+id/details_text1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:id="@+id/details_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Ruching at neckline,bust and waist"
+                android:layout_below="@+id/details_text2"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:id="@+id/details_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Lined stretch jersey,hits above the knee"
+                android:layout_below="@+id/details_text3"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"
+                />
+
+            <TextView
+                android:id="@+id/details_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Cotton/Modal/Lycra spandex"
+                android:layout_below="@+id/details_text4"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:id="@+id/details_text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Machine wash"
+                android:layout_below="@+id/details_text5"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"/>
+
+
+            <TextView
+                android:id="@+id/details_text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Imported"
+                android:layout_below="@+id/details_text6"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/Takepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ggbb"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/details">
+
+            <TextView
+                android:id="@+id/takepic_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Picture"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:textColor="#000"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextarrow"
+                android:background="@drawable/arreow_next"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Myside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ggbb"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/Takepic">
+
+            <TextView
+                android:id="@+id/Myside_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Side"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:textColor="#000"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextarrow2"
+                android:background="@drawable/arreow_next"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mapbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/Myside">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/laterbtn"
+                    android:background="@drawable/later"
+                    android:layout_alignParentLeft="true"
+
+                   />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sendbtn"
+                    android:background="@drawable/send"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+                 />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
