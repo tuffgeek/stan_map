@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/linrlyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hazard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hzrd" />
+
+        <TextView
+            android:id="@+id/tv_descp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dscrp" />
+
+        <TextView
+            android:id="@+id/tv_lctn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lctn" />
+
+
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tv_lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="side" />
+
+    </LinearLayout>
+
+</LinearLayout>
